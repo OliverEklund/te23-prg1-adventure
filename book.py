@@ -176,9 +176,11 @@ BOOK = [
     
     {
         "id": 21,
-        "title": "Battle with the Green Knight",
-        "text": "You draw your weapon and engage in an intense duel with the Green Knight. The fight is long and grueling, your skills matched against his ruthless precision. You nearly triumph, but in the end, his halberd finds its mark. You fall, your quest coming to a valiant end.",
-        "options": []
+        "title": "Duel with the Green Knight",
+        "text": "You draw your weapon and engage in an intense duel with the Green Knight. The fight is long and grueling, your skills matched against his ruthless precision. Eventually you land a lucky strike on him. As you move in to finish him off he horse-kicks you in the chin, giving the green knight enough time to retreat into the horizon. At least you still have your life.",
+        "options": [
+             {"text": "Advance toward the mountain.", "next_id": 26}
+        ]
     },
 
     {
@@ -210,7 +212,7 @@ BOOK = [
     {
         "id": 25,
         "title": "Battle with the Green Knight",
-        "text": "BARBARIANS! The green knight screams in rage and charges at you. You draw your sword to prepare for duel. The fight is long and grueling, your skills matched against his ruthless precision. You nearly triumph, but in the end, his halberd finds its mark. You fall, your quest coming to a valiant end.",
+        "text": "BARBARIANS! The green knight screams in rage and charges at you. You draw your sword to prepare for duel. The fight is long and grueling, your skills matched against his ruthless precision. You nearly triumph, but in the end due to you being unprepared to fight, his halberd finds its mark. You fall, your quest coming to a valiant end.",
         "options": []
     },
     {
