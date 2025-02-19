@@ -47,6 +47,7 @@ BOOK = [
         "options": [
             {"text": "Head to the haunted forest.", "next_id": 3}
         ]
+        "loot": "Reinforced Longsword",
     },
     {
         "id": 5,
@@ -106,14 +107,16 @@ BOOK = [
         "options": [
             {"text": "Take what little remains and continue on.", "next_id": 14}
         ]
+        "loot": "Paper Scraps",
     },
     {
         "id": 13,
         "title": "Victory and Spoils",
-        "text": "You strike the mantis down before it even realizes the danger. Searching the wagon, you find valuable supplies and a small enchanted trinket. Feeling victorious, you continue on your quest.",
+        "text": "You strike the mantis down before it even realizes the danger. Searching the wagon, you find valuable supplies and a enchanted cookbook. Feeling victorious, you continue on your quest.",
         "options": [
             {"text": "Continue deeper into the forest.", "next_id": 14}
         ]
+        "loot": "Enchanted Cookbook",
     },
     {
         "id": 14,
@@ -224,6 +227,46 @@ BOOK = [
             {"text": "Continue traveling through the night.", "next_id": 28}
         ]
     },
+    {
+        "id": 26,
+        "title": "The Cave's Depths",
+        "text": "You settle near the entrance, but curiosity gets the better of you. As you venture deeper into the cave, a storm begins to rage outside. The deeper you go, the more mysterious the cave becomes...",
+        "options": [
+            {"text": "Press forward into the darkness.", "next_id": 28},
+            {"text": "Turn back and rest near the entrance.", "next_id": 29}
+        ]
+    },
+
+    {
+        "id": 27,
+        "title": "Through the Night",
+        "text": "You decide to press on through the night, though exhaustion weighs heavily on you. The moonlight guides your path as you push forward across the mountains, ever wary of what dangers might lurk in the darkness...",
+        "options": [
+            {"text": "Continue across the mountains.", "next_id": 30}
+        ]
+    }
+    {
+        "id": 28,
+        "title": "Gnome Ambush",
+        "text": "As you venture deeper into the cave, shadows move around you. Before you can react, a gang of gnomes ambushes you! They swiftly relieve you of your belongings before vanishing into the darkness, leaving you empty-handed and lost.",
+        "options": []
+    },
+
+    {
+        "id": 29,
+        "title": "Morning Departure",
+        "text": "You decide to rest near the entrance. As dawn breaks, you awaken refreshed and set out toward the mountain, traversing its rocky paths safely.",
+        "options": [
+            {"text": "Continue over the mountains.", "next_id": 31}
+        ]
+    },
+
+    {
+        "id": 30,
+        "title": "The Mountain Troll",
+        "text": "As you press on through the night, you come across a massive cave opening. A towering mountain troll emerges, blocking your path. 'No one passes without answering my riddles,' he bellows. Your wit will decide your fate.",
+        "options": []
+    }
 ]
 
 
