@@ -1,3 +1,4 @@
+
 from book import BOOK
 
 def input_int(prompt):
@@ -30,6 +31,7 @@ def main():
             print(f"You found {current_page['loot']}!")
             inventory.append(current_page["loot"])
         choice = input_int("Enter your choice: ")
+
         if 1 <= choice <= len(current_page["options"]):
             current_id = current_page["options"][choice - 1]["next_id"]
         else:
