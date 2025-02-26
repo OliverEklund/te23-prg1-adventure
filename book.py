@@ -25,7 +25,7 @@ BOOK = [
         "title": "The Blacksmith’s Forge",
         "text": "The blacksmith, a burly man named Gorin, greets you with a nod. 'A knight on a quest, eh? I have fine weapons and armor. But they come at a price.' Do you...",
         "options": [
-            {"text": "Purchase a Silber longsword.", "next_id": 4},
+            {"text": "Purchase a Silver longsword.", "next_id": 4},
             {"text": "Try to barter for a better price.", "next_id": 5},
             {"text": "Leave without buying anything.", "next_id": 3}
         ],
