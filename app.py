@@ -1,5 +1,6 @@
-
 from book import BOOK
+
+inventory = []
 
 def input_int(prompt):
     while True:
@@ -19,7 +20,12 @@ def show_page(page):
     print(page["text"])
     for i, option in enumerate(page["options"]):
         print(f"{i + 1}. {option['text']}")
-
+        if "requires" in option:
+            if option["requires"] and (option["requires"]) in inventory:
+                #nu kan du välja detta
+                print(f"This requires the {option["requires"]} item")
+        else:
+            print("")
 
 def main():
     current_id = 1
@@ -31,14 +37,12 @@ def main():
             print(f"You found {current_page['loot']}!")
             inventory.append(current_page["loot"])
         choice = input_int("Enter your choice: ")
-        print(inventory)
-
+        print(inventory)   
         if 1 <= choice <= len(current_page["options"]):
             current_id = current_page["options"][choice - 1]["next_id"]
         else:
             print("Invalid choice. Please try again.")
             current_id = None
-
 
 if __name__ == "__main__":
     main()
