@@ -1,7 +1,7 @@
 from book import BOOK
 
 inventory = []
-
+score = 0
 def input_int(prompt):
     while True:
         try:
@@ -36,8 +36,10 @@ def main():
         if "loot" in current_page:
             print(f"You found {current_page['loot']}!")
             inventory.append(current_page["loot"])
+            score = score + 1
         choice = input_int("Enter your choice: ")
-        print(inventory)   
+        print(inventory) 
+        print(f"Score: {score}")
         if 1 <= choice <= len(current_page["options"]):
             current_id = current_page["options"][choice - 1]["next_id"]
         else:
